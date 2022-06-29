@@ -1,3 +1,4 @@
 {
-  "cSpell.words": ["Bootcamp"]
+  "cSpell.words": ["Bootcamp"],
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }

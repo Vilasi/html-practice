@@ -10,252 +10,295 @@
     <link rel="stylesheet" href="" />
   </head>
   <body>
-    <!-- Header Practice -->
-    <h1>
-      Chickens - Notorious, Glamorous. There should typically only be one h1 in
-      a page - a proper heading to a webpage. Just like a chicken.
-    </h1>
-    <p>The other heading tags are used for subtopics</p>
-    <h2>Chickens, who are they?</h2>
-    <h3>What do they know?</h3>
-    <h4>Do they know things?</h4>
-    <h5>Let's find out!</h5>
-    <h6>
-      .........................................................................................................
-    </h6>
-    <hr />
-    <h2>Links</h2>
-    <!-- Lists Practice | Anchor tag practice -->
-
-    <!-- This ul has an inline CSS style because I'm not supposed to know what CSS is yet -->
-    <ul style="list-style-type: none; padding: 0; margin: 0">
-      <li>
-        <a href="https://www.google.com" target="_blank">Google</a>
-      </li>
-      <li>
+    <header>
+      <!-- Header Practice -->
+      <h1>HTML Practice - Where the HTML is Nothing, and the Links are Free</h1>
+      <p>The other heading tags are used for subtopics</p>
+      <h2>Chickens, who are they?</h2>
+      <h3>What do they know?</h3>
+      <h4>Do they know things?</h4>
+      <h5>Let's find out!</h5>
+      <h6>
+        .........................................................................................................
+      </h6>
+      <nav>
+        <ul>
+          <li>
+            <a href="home">Home</a>
+          </li>
+          <li>
+            <a href="./exercises/index.html">Exercises</a>
+          </li>
+          <li>
+            <a href="./html/about.html">About</a>
+          </li>
+        </ul>
+      </nav>
+      <hr />
+    </header>
+    <main>
+      <section>
+        <h2>Links</h2>
+        <!-- Lists Practice | Anchor tag practice -->
+        <!-- This ul has an inline CSS style because I'm not supposed to know what CSS is yet -->
+        <ul style="list-style-type: none; padding: 0; margin: 0">
+          <li>
+            <a href="https://www.google.com" target="_blank">Google</a>
+          </li>
+          <li>
+            <a href="./html/about.html">About Page</a>
+          </li>
+        </ul>
+        <!-- Inline vs Block elements -->
+        <!-- links are typically inline elements -->
+        <h2>Inline vs Block elements</h2>
+        <p>Links are typically inline</p>
         <a href="./html/about.html">About Page</a>
-      </li>
-    </ul>
-
-    <!-- Inline vs Block elements -->
-    <!-- links are typically inline elements -->
-    <h2>Inline vs Block elements</h2>
-    <p>Links are typically inline</p>
-    <a href="./html/about.html">About Page</a>
-    <a href="https://www.google.com" target="_blank">Google</a>
-    <p>&lt;p&gt; elements are block</p>
-
-    <h3>
-      If a block element (such as &lt;p&gt;) is put between two inline elements
-      (such as &lt;a&gt;) the inline elements will become block
-    </h3>
-    <a href="./html/about.html">About Page</a>
-    <p>&lt;p&gt; elements are block</p>
-
-    <a href="https://www.google.com" target="_blank">Google</a>
-
-    <!-- divs and other such nonsense -->
-    <h2>Divs</h2>
-    <ul>
-      <li>
-        A div is a block level element - a box/container to wrap around other
-        content. Like christmas. Which came first? Christmas presents or Divs?
-      </li>
-      <li>
-        If you put inline content within a div, those things will behave like
-        they're block level
-      </li>
-    </ul>
-    <h3>Div example</h3>
-    <p>Non Div, inline:</p>
-    <a href="./html/about.html">About Page</a>
-    <a href="https://www.google.com" target="_blank">Google</a>
-    <a href="./html/about.html">About Page</a>
-    <a href="https://www.google.com" target="_blank">Google</a>
-
-    <p>Anchor tags with div wrapping, block level:</p>
-    <a href="./html/about.html">About Page</a>
-    <a href="https://www.google.com" target="_blank">Google</a>
-    <div>
-      <a href="./html/about.html">About Page</a>
-      <a href="https://www.google.com" target="_blank">Google</a>
-    </div>
-    <hr />
-
-    <!-- <span>'s and other things to use in place of ham for your Ham Span sandwich' -->
-    <h2>Span</h2>
-    <p>
-      A span is a generic element that can be wrapped around something. Like
-      this
-      <span
-        >&lt;p&gt;Lorem ipsum dolor&lt;span&gt;etca&lt;/span&gt; mongo
-        spaghet&lt;/p&gt;</span
-      >
-    </p>
-    <ul>
-      <li>A span is inline. It won't receive its own block like a div does.</li>
-      <li>
-        Useful for CSS styling certain words or stuff within an inline text
-        block or some such
-      </li>
-    </ul>
-    <p>Spans can go around text within something like an anchor tag too</p>
-    <a href="./html/about.html">About <span>page</span></a>
-    <hr />
-
-    <!-- <hr> and other odd elements one may encounter -->
-    <h2>Miscellaneous HTML Tags</h2>
-    <h3>&lt;hr /&gt;</h3>
-    <p>
-      &lt;hr /&gt; is the "thematic break" element. It creates a horizontal
-      line, as can be seen throughout this page. It has no closing tag.
-    </p>
-    <h3>&lt;br /&gt;</h3>
-    <p>
-      Creates a line break.<br />
-      Like you're writing a poem or something:
-    </p>
-
-    <h4>Like you're writing a poem or something:</h4>
-    <p>
-      Be thou as the sun my dear,<br />
-      His rays of gold and bronze.<br />
-      Make a wish upon the years,<br />
-      An eon slowly dawns.
-    </p>
-    <p>
-      Hold thy wish and keep it close,<br />
-      There is no thing to fear.<br />
-      Remember as the sun arose<br />
-      The daylight's always near.
-    </p>
-    <p style="font-size: 8px">That's a poem I wrote lol</p>
-
-    <h3>&lt;sup&gt;&lt;/sup&gt; &amp; &lt;sub&gt;&lt;/sub&gt;</h3>
-    <p>
-      Superscript<sup>&lt;sup&gt;&lt;/sup&gt;</sup> and subscript<sub
-        >&lt;sub&gt;&lt;/sub&gt;</sub
-      >
-    </p>
-    <p>Useful for exponents and research paper type stuff.</p>
-    <p>
-      The chicken is a bird of prey.<sup
-        ><a href="https://en.wikipedia.org/wiki/Bird_of_prey">[1]</a></sup
-      >
-    </p>
-    <p><sup>1</sup>/<sub>2</sub> + <sup>1</sup>/<sub>2</sub> = 1</p>
-    <hr />
-
-    <!-- HTML Entity Codes -->
-    <h2>HTML Entity Codes "&amp;...;"</h2>
-    <a
-      href="https://html.spec.whatwg.org/multipage/named-characters.html"
-      target="_blank"
-      >HTML Entity Codes Reference Site.</a
-    >
-    <p>These entity codes let you use reserved characters, like &lt;</p>
-    <p>
-      An easy was to find them is to google something like "HTML &lt; entity
-      code"
-    </p>
-    <p>
-      Every entity code also has a #80087 type code you can use. Like: &#8224;
-      vs &dagger;
-    </p>
-
-    <!-- <p> and Header Practice -->
-    <h2>What is a chicken?</h2>
-
-    <!-- Images - internal source -->
-    <img
-      src="./img/silkiechicken.jpg"
-      alt="A Silkie Chicken. Very cute. Very Fluffy"
-    />
-    <p>
-      The <b>chicken</b> is a vicious bird of prey. It should be avoided at all
-      costs. You may see a chicken on a farm. <em><b>Run.</b></em>
-    </p>
-
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ipsam
-      recusandae voluptatum repellat adipisci vitae numquam vero alias velit
-      eius incidunt eligendi odio voluptas tenetur, maxime totam, nisi minus!
-      Aliquam.
-    </p>
-
-    <h2>This is placeholder text heading</h2>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione eum
-      nostrum quaerat placeat, quas veritatis rerum odit aperiam ex voluptas
-      beatae voluptatum eaque assumenda ad repellat. Voluptate in optio neque.
-      Suscipit, aut numquam eius, quisquam nam velit obcaecati minima rem labore
-      fugiat minus eligendi illum dolores quidem quo beatae, soluta praesentium
-      dolor sapiente qui! Fuga, quis! Asperiores necessitatibus deleniti
-      distinctio! Ratione iure eos quod ad voluptatem? Est quos temporibus
-      consequuntur eveniet tempora? Officiis iste est nihil perspiciatis
-      architecto minus. Nesciunt fugit enim iste? Tenetur, cum magni enim
-      ratione non alias.
-    </p>
-
-    <h3>Never have an h3 without the preceding h1, h2.</h3>
-
-    <h4>h4 Section</h4>
-    <h4>h4 Section</h4>
-    <h4>h4 Section</h4>
-    <h5>h5 SubSection</h5>
-    <h6>h6 SubSubSection</h6>
-
-    <!-- Anchor tag within <p></p> -->
-    <p>
-      Genetic studies have pointed to multiple maternal origins in
-      <a href="https://en.wikipedia.org/wiki/South_Asia" target="_blank"
-        >South Asia</a
-      >, Southeast Asia, and East Asia,[6] but the clade found in the Americas,
-      Europe, the Middle East and Africa originated from the Indian
-      subcontinent. From ancient India, the chicken spread to Lydia in western
-      Asia Minor, and to Greece by the 5th century BC.[7] Fowl have been known
-      in Egypt since the mid-15th century BC, with the "bird that gives birth
-      every day" having come from the land between Syria and Shinar, Babylonia,
-      according to the annals of Thutmose III.
-    </p>
-
-    <!-- More Lists + Embedded lists -->
-    <h2>Chicken Breeds</h2>
-    <ul>
-      <li>
-        Bantam
+        <a href="https://www.google.com" target="_blank">Google</a>
+        <p>&lt;p&gt; elements are block</p>
+        <h3>
+          If a block element (such as &lt;p&gt;) is put between two inline
+          elements (such as &lt;a&gt;) the inline elements will become block
+        </h3>
+        <a href="./html/about.html">About Page</a>
+        <p>&lt;p&gt; elements are block</p>
+        <a href="https://www.google.com" target="_blank">Google</a>
+        <!-- divs and other such nonsense -->
+        <h2>Divs</h2>
         <ul>
-          <li>Silkie</li>
-          <li>Polish</li>
+          <li>
+            A div is a block level element - a box/container to wrap around
+            other content. Like christmas. Which came first? Christmas presents
+            or Divs?
+          </li>
+          <li>
+            If you put inline content within a div, those things will behave
+            like they're block level
+          </li>
         </ul>
-      </li>
-      <li>
+        <h3>Div example</h3>
+        <p>Non Div, inline:</p>
+        <a href="./html/about.html">About Page</a>
+        <a href="https://www.google.com" target="_blank">Google</a>
+        <a href="./html/about.html">About Page</a>
+        <a href="https://www.google.com" target="_blank">Google</a>
+        <p>Anchor tags with div wrapping, block level:</p>
+        <a href="./html/about.html">About Page</a>
+        <a href="https://www.google.com" target="_blank">Google</a>
+        <div>
+          <a href="./html/about.html">About Page</a>
+          <a href="https://www.google.com" target="_blank">Google</a>
+        </div>
+        <hr />
+      </section>
+
+      <!-- <span>'s and other things to use in place of ham for your Ham Span sandwich' -->
+      <section>
+        <h2>Span</h2>
+        <p>
+          A span is a generic element that can be wrapped around something. Like
+          this
+          <span
+            >&lt;p&gt;Lorem ipsum dolor&lt;span&gt;etca&lt;/span&gt; mongo
+            spaghet&lt;/p&gt;</span
+          >
+        </p>
         <ul>
-          <li>Easter Egger</li>
-          <li>Road Island Red</li>
-          <li>Chinese Dragon</li>
-          <li><b>Unholy</b> Monster of Destruction (Chilean Variant)</li>
+          <li>
+            A span is inline. It won't receive its own block like a div does.
+          </li>
+          <li>
+            Useful for CSS styling certain words or stuff within an inline text
+            block or some such
+          </li>
         </ul>
-      </li>
-    </ul>
+        <p>Spans can go around text within something like an anchor tag too</p>
+        <a href="./html/about.html">About <span>page</span></a>
+        <hr />
+        <!-- <hr> and other odd elements one may encounter -->
+        <h2>Miscellaneous HTML Tags</h2>
+        <h3>&lt;hr /&gt;</h3>
+        <p>
+          &lt;hr /&gt; is the "thematic break" element. It creates a horizontal
+          line, as can be seen throughout this page. It has no closing tag.
+        </p>
+        <h3>&lt;br /&gt;</h3>
+        <p>
+          Creates a line break.<br />
+          Like you're writing a poem or something:
+        </p>
+        <h4>Like you're writing a poem or something:</h4>
+        <p>
+          Be thou as the sun my dear,<br />
+          His rays of gold and bronze.<br />
+          Make a wish upon the years,<br />
+          An eon slowly dawns.
+        </p>
+        <p>
+          Hold thy wish and keep it close,<br />
+          There is no thing to fear.<br />
+          Remember as the sun arose<br />
+          The daylight's always near.
+        </p>
+        <p style="font-size: 8px">That's a poem I wrote lol</p>
+        <h3>&lt;sup&gt;&lt;/sup&gt; &amp; &lt;sub&gt;&lt;/sub&gt;</h3>
+        <p>
+          Superscript<sup>&lt;sup&gt;&lt;/sup&gt;</sup> and subscript<sub
+            >&lt;sub&gt;&lt;/sub&gt;</sub
+          >
+        </p>
+        <p>Useful for exponents and research paper type stuff.</p>
+        <p>
+          The chicken is a bird of prey.<sup
+            ><a href="https://en.wikipedia.org/wiki/Bird_of_prey">[1]</a></sup
+          >
+        </p>
+        <p><sup>1</sup>/<sub>2</sub> + <sup>1</sup>/<sub>2</sub> = 1</p>
+        <hr />
+      </section>
 
-    <!-- Images - External Source -->
-    <img
-      src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/K%C3%BCken_vor_dem_ersten_Ausflug.jpg/1280px-K%C3%BCken_vor_dem_ersten_Ausflug.jpg"
-      alt="Little baby chickens"
-    />
+      <!-- HTML Entity Codes -->
+      <section>
+        <h2>HTML Entity Codes "&amp;...;"</h2>
+        <a
+          href="https://html.spec.whatwg.org/multipage/named-characters.html"
+          target="_blank"
+          >HTML Entity Codes Reference Site.</a
+        >
+        <p>These entity codes let you use reserved characters, like &lt;</p>
+        <p>
+          An easy was to find them is to google something like "HTML &lt; entity
+          code"
+        </p>
+        <p>
+          Every entity code also has a #80087 type code you can use. Like:
+          &#8224; vs &dagger;
+        </p>
+      </section>
 
-    <div>
-      <h3>Links to Coding Exercises</h3>
-      <ul>
-        <li>
-          <a href="./index.html">Pangolins</a>
-        </li>
-        <li>
-          <a href="./html/snowman-logo.html">Snowman Exercise</a>
-        </li>
-      </ul>
-    </div>
+      <!-- <p> and Header Practice -->
+      <section id="random-extras">
+        <h2>What is a chicken?</h2>
+        <!-- Images - internal source -->
+        <img
+          src="./img/silkiechicken.jpg"
+          alt="A Silkie Chicken. Very cute. Very Fluffy"
+        />
+        <p>
+          The <b>chicken</b> is a vicious bird of prey. It should be avoided at
+          all costs. You may see a chicken on a farm. <em><b>Run.</b></em>
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+          ipsam recusandae voluptatum repellat adipisci vitae numquam vero alias
+          velit eius incidunt eligendi odio voluptas tenetur, maxime totam, nisi
+          minus! Aliquam.
+        </p>
+        <h2>This is placeholder text heading</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione eum
+          nostrum quaerat placeat, quas veritatis rerum odit aperiam ex voluptas
+          beatae voluptatum eaque assumenda ad repellat. Voluptate in optio
+          neque. Suscipit, aut numquam eius, quisquam nam velit obcaecati minima
+          rem labore fugiat minus eligendi illum dolores quidem quo beatae,
+          soluta praesentium dolor sapiente qui! Fuga, quis! Asperiores
+          necessitatibus deleniti distinctio! Ratione iure eos quod ad
+          voluptatem? Est quos temporibus consequuntur eveniet tempora? Officiis
+          iste est nihil perspiciatis architecto minus. Nesciunt fugit enim
+          iste? Tenetur, cum magni enim ratione non alias.
+        </p>
+        <h3>Never have an h3 without the preceding h1, h2.</h3>
+        <h4>h4 Section</h4>
+        <h4>h4 Section</h4>
+        <h4>h4 Section</h4>
+        <h5>h5 SubSection</h5>
+        <h6>h6 SubSubSection</h6>
+        <!-- Anchor tag within <p></p> -->
+        <p>
+          Genetic studies have pointed to multiple maternal origins in
+          <a href="https://en.wikipedia.org/wiki/South_Asia" target="_blank"
+            >South Asia</a
+          >, Southeast Asia, and East Asia,[6] but the clade found in the
+          Americas, Europe, the Middle East and Africa originated from the
+          Indian subcontinent. From ancient India, the chicken spread to Lydia
+          in western Asia Minor, and to Greece by the 5th century BC.<sup
+            ><a href="https://youtu.be/dGFSjKuJfrI" target="_blank">[7]</a></sup
+          >
+          Fowl have been known in Egypt since the mid-15th century BC, with the
+          "bird that gives birth every day" having come from the land between
+          Syria and Shinar, Babylonia, according to the annals of Thutmose III.
+        </p>
+        <!-- More Lists + Embedded lists -->
+        <h2>Chicken Breeds</h2>
+        <ul>
+          <li>
+            Bantam
+            <ul>
+              <li>Silkie</li>
+              <li>Polish</li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li>Easter Egger</li>
+              <li>Road Island Red</li>
+              <li>Chinese Dragon</li>
+              <li><b>Unholy</b> Monster of Destruction (Chilean Variant)</li>
+            </ul>
+          </li>
+        </ul>
+        <!-- Images - External Source -->
+        <!-- Im tired of looking at this giant picture so it's being saved for later -->
+        <!-- <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/K%C3%BCken_vor_dem_ersten_Ausflug.jpg/1280px-K%C3%BCken_vor_dem_ersten_Ausflug.jpg"
+          alt="Little baby chickens"
+        /> -->
+      </section>
+      <hr />
+
+      <section>
+        <h2>Semantic Elements</h2>
+        <p>
+          Semantic elements are tags which separate the page. Like main, header,
+          footer, section, article, aside etc.
+        </p>
+        <ul>
+          <li>
+            &lt;article&gt; is used for discrete compositions. Things that can
+            be reused - like a weather widget, or an op ed, or a film review
+            format, etc.
+          </li>
+          <li>
+            &lt;aside&gt; is for things that are meant to be off to the side of
+            the main bit of the page. Or a bit of text, whatever.
+          </li>
+          <li>Header. Header.</li>
+          <li>
+            You can have more than one header, or more than one footer, or more
+            than one aside, etc.
+          </li>
+          <li>Think of semantic elements as boxes to put stuff into.</li>
+          <li>
+            &lt;time&gt;&lt;/time&gt; is used for denoting the time, date. This
+            one is necessary.
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <h3>Links to Coding Exercises</h3>
+        <ul>
+          <li>
+            <a href="./index.html">Pangolins</a>
+          </li>
+          <li>
+            <a href="./html/snowman-logo.html">Snowman Exercise</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
 
     <script src="" async defer></script>
   </body>

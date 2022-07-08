@@ -22,11 +22,76 @@
           </li>
           <li>
             The <em>method</em> attribute specifies which HTTP method should be
-            used.
+            used. GET and POST
           </li>
         </ul>
+        <h3>Form Element</h3>
+        <ul>
+          <li>&lt;input&gt; With type Attribute - no closing attribute.</li>
+          <li>
+            &lt;label&gt;&lt;/label&gt; The title for the input -- Includes
+            &quot;for&quot; attribute to attach the label to the input.
+          </li>
+          <li>
+            placeholder attribute puts placeholder text into the input field.
+            Helps a user more immediately understand what the input is for.
+          </li>
+          <li>Form inputs are inline by default.</li>
+          <li>
+            &lt;input/&gt;&apos;s can be nested inside of labels like this:
+            &lt;label&gt;Password Input: &lt;input id=&quot;password&quot;
+            type=&quot;password&quot;/&gt;&lt;/label&gt;
+            <br />But it isn't best practice to do so. The for attribute isn't
+            needed when you nest them like this.
+          </li>
+        </ul>
+
+        <img
+          src="https://i.imgur.com/xjtDZia.png"
+          alt="input and label photo"
+        />
       </section>
     </header>
-    <main></main>
+    <main>
+      <h2>Form:</h2>
+      <form action="/tacos/">
+        <div>
+          <label for="textInput">Enter a Username</label>
+          <input
+            id="text-input"
+            name="text-input"
+            type="text"
+            placeholder="username"
+          />
+        </div>
+
+        <label for="password">Password Input:</label>
+        <input
+          id="password"
+          name="password"
+          type="password"
+          placeholder="password"
+        />
+
+        <div>
+          <label for="color-picker">Choose a Color for your Character!</label>
+          <input id="color-picker" name="color-picker" type="color" />
+        </div>
+
+        <div>
+          <label for="number-input">Pick a Number if You Value Your Life</label>
+          <input
+            id="number-input"
+            name="number-input"
+            type="number"
+            placeholder="7"
+          />
+        </div>
+
+        <!-- <input id="number-input" name="number-input" type="number" />
+
+        <input id="time-input" name="time-input" type="time" /> -->
+      </form>
+    </main>
   </body>
 </html>

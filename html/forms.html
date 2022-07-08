@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <h1>Forms Demo</h1>
+      <h1>Forms Demo (And Buttons)</h1>
       <section>
         <h2>&lt;form&gt;&lt;/form&gt;</h2>
         <ul>
@@ -44,12 +44,30 @@
             <br />But it isn't best practice to do so. The for attribute isn't
             needed when you nest them like this.
           </li>
+          <li>
+            name="attribute" is the name which is given to inputs. They give
+            information to other code and the server.
+          </li>
+          <label for="nesting-example"></label>
         </ul>
 
         <img
           src="https://i.imgur.com/xjtDZia.png"
           alt="input and label photo"
         />
+      </section>
+      <section>
+        <h2>Button</h2>
+        <p>
+          Button's are great an can do a lot. <br />
+          When they are in forms they auto submit forms (Based on the action
+          attribute specified in the &lt;form&gt; tag) by default.
+        </p>
+        <h4>type attributes</h4>
+        <ul>
+          <li>type="button = just behave like a button.</li>
+          <li>&lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;</li>
+        </ul>
       </section>
     </header>
     <main>
@@ -88,10 +106,18 @@
           />
         </div>
 
-        <!-- <input id="number-input" name="number-input" type="number" />
-
-        <input id="time-input" name="time-input" type="time" /> -->
+        <button type="submit">Submit</button>
       </form>
+      <hr />
+      <section>
+        <h2>Hijacking another website's search bar</h2>
+        <form action="https://www.google.com/search?">
+          <label for="q">Search Google</label>
+          <input id="q" name="q" type="text" />
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
     </main>
   </body>
 </html>

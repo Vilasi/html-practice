@@ -69,6 +69,16 @@
           <li>&lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;</li>
         </ul>
       </section>
+
+      <section>
+        <h2>&lt;select&gt;&lt;/select&gt; Is a dropdown menu form.</h2>
+        <ul>
+          <li>
+            &lt;option&gt;&lt;/option&gt; Is the subelement that goes in a
+            select
+          </li>
+        </ul>
+      </section>
     </header>
     <main>
       <h2>Form:</h2>
@@ -103,6 +113,9 @@
             name="number-input"
             type="number"
             placeholder="7"
+            min="5"
+            max="1000"
+            step="25"
           />
         </div>
 
@@ -147,6 +160,77 @@
         </form>
 
         <h3>Radio Buttons - only once can be selected</h3>
+        <p>
+          radio buttons that are grouped together should all have the sane name
+        </p>
+        <p>
+          Radio buttons need to have a value attribute so that they can be
+          parsed by JS or what have you.
+        </p>
+        <h3>Shirt Size</h3>
+        <form action="./forms.html" method="get">
+          <div>
+            <label for="xs">Extra Small:</label>
+            <input type="radio" name="size" id="xs" value="xs" />
+
+            <label for="s">Small:</label>
+            <input type="radio" name="size" id="s" value="s" />
+
+            <label for="m">Medium:</label>
+            <input type="radio" name="size" id="m" value="m" />
+
+            <label for="l">Large:</label>
+            <input type="radio" name="size" id="l" value="l" />
+          </div>
+          <br />
+          <label for="shipping-speed" style="padding-right: 0.5rem"
+            >Select a Shipping Speed:</label
+          >
+          <select name="shipping-speed" id="shipping-speed">
+            <option value="oneday">One Day Shipping</option>
+            <option value="twoday">Two Day Shipping</option>
+            <option value="standard" selected>Standard</option>
+            <option value="twoweek">Two Weeks :(</option>
+            <option value="yags">You Ain&apos;t Gettin&apos; Shit</option>
+          </select>
+          <br />
+          <div>
+            <label for="agree"
+              >I acknowledge that I have read and agree to the Terms of
+              Service&reg;</label
+            >
+            <input type="checkbox" name="agree" id="agree" />
+          </div>
+          <br />
+
+          <button type="">Submit</button>
+        </form>
+      </section>
+
+      <!------------------------------------------------------------------------------->
+      <!------------------------------------------------------------------------------->
+      <!------------------------------------------------------------------------------->
+      <!-------------------------------- Range Input ---------------------------------->
+      <!------------------------------------------------------------------------------->
+      <!------------------------------------------------------------------------------->
+      <!------------------------------------------------------------------------------->
+      <section>
+        <h2>Range Input and Textarea Input</h2>
+        <form id="range" action="./forms.html">
+          <p>Audio Settings (Range)</p>
+          <label for="volume">Volume:</label>
+          <input type="range" id="volume" min="0" max="100" step="5" />
+
+          <label for="textarea">Textarea:</label>
+          <br />
+          <textarea
+            name="textarea"
+            id="textarea"
+            cols="100"
+            rows="5"
+            placeholder="select and area are not form input tags "
+          ></textarea>
+        </form>
       </section>
     </main>
   </body>

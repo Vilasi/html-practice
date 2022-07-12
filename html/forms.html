@@ -228,8 +228,29 @@
             id="textarea"
             cols="100"
             rows="5"
-            placeholder="select and area are not form input tags "
+            placeholder='"select and area are not form input tags"'
           ></textarea>
+        </form>
+      </section>
+      <hr />
+      <section>
+        <h2>Form Validation</h2>
+        <p>
+          Forms can be validated through HTML + through the server too, but
+          that's less common.
+        </p>
+        <h3>Validations Demo</h3>
+        \
+        <form action="./dummy">
+          <label for="first">First</label>
+          <input type="text" id="first" name="firstname" required />
+
+          <p>
+            <label for="username">Username</label>
+            <input type="text" minlength="3" />
+          </p>
+
+          <button>Submit</button>
         </form>
       </section>
     </main>
